@@ -1,3 +1,4 @@
+/* Reset dan gaya dasar */
 html,
 body,
 h1,
@@ -19,6 +20,7 @@ body {
   text-align: justify;
 }
 
+/* Header */
 header {
   background-image: url("../Image/Petualang.jpg");
   background-size: cover;
@@ -29,6 +31,7 @@ header {
   padding: 15px;
 }
 
+/* Navigasi */
 nav {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -46,6 +49,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
+/* Section umum */
 section {
   padding: 20px;
   max-width: 800px;
@@ -55,11 +59,13 @@ section {
   border-radius: 8px;
 }
 
+/* Judul */
 h2,
 h3 {
   color: #333;
 }
 
+/* Tabel Umum */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -78,6 +84,7 @@ th {
   color: white;
 }
 
+/* Footer */
 footer {
   background: #333;
   color: white;
@@ -86,6 +93,7 @@ footer {
   margin-top: 20px;
 }
 
+/* Formulir Kontak */
 form {
   width: 50%;
   margin: auto;
@@ -123,6 +131,7 @@ input[type="submit"]:hover {
   background: #0101d9;
 }
 
+/* Sosial Media */
 .sosial-media {
   margin-top: 20px;
   text-align: center;
@@ -138,6 +147,7 @@ input[type="submit"]:hover {
   transform: scale(1.1);
 }
 
+/* Gambar di wisata.html */
 .image-container {
   display: flex;
   justify-content: center;
