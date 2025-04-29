@@ -1,14 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const now = new Date();
-  const hour = now.getHours();
-  let greeting = "Selamat Datang!";
+  const greeting = document.getElementById("greeting");
+  const today = new Date();
+  const hour = today.getHours();
 
-  if (hour < 12) greeting = "Selamat Pagi!";
-  else if (hour < 18) greeting = "Selamat Siang!";
-  else greeting = "Selamat Malam!";
+  let message = "";
 
-  const greetingElement = document.getElementById("greeting");
-  if (greetingElement) {
-    greetingElement.innerText = greeting;
+  if (hour < 12) {
+    message = "Selamat pagi, Petualang!";
+  } else if (hour < 18) {
+    message = "Selamat sore, Petualang!";
+  } else {
+    message = "Selamat malam, Petualang!";
   }
+
+  greeting.textContent = message;
 });

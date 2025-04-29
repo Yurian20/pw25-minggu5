@@ -1,22 +1,18 @@
-function validateForm() {
-  const nama = document.getElementById("nama").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const pesan = document.getElementById("pesan").value.trim();
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
 
-  if (nama === "" || email === "" || pesan === "") {
-    alert("Semua kolom harus diisi!");
-    return false;
-  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  if (!email.includes("@") || !email.includes(".")) {
-    alert("Masukkan email yang valid.");
-    return false;
-  }
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
 
-  alert("Form berhasil dikirim!");
-  return true;
-}
-
-function toggleMode() {
-  document.body.classList.toggle("dark-mode");
-}
+    if (nama && email && pesan) {
+      alert(`Terima kasih ${nama}, pesan Anda telah terkirim!`);
+      form.reset();
+    } else {
+      alert("Harap lengkapi semua data sebelum mengirim!");
+    }
+  });
+});
